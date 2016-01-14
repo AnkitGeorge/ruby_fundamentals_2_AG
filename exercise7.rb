@@ -22,9 +22,20 @@ puts "#{students.keys} are the keys."
 students.each do |c, s|
   puts "#{c}: #{(s * 1.05).to_i} students"
 end
+# Print out student numbers to nearest integer.
+
+# puts "#{print_cohort(students)}" #test print
 
 students.delete(:cohort2)
 
 students.each do |c, s|
   puts "#{c}: #{(s * 1.05).to_i} students"
 end
+
+# puts "#{print_cohort(students)}" #test print
+
+#bonus code below
+total_students = students.values
+
+sum = 0
+total_students.each {|n| puts sum += n}
